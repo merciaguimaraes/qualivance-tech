@@ -1,0 +1,1 @@
+export default function Home(){return <main style={{minHeight:'100vh',background:'#04152d',color:'#fff',padding:'48px',fontFamily:'Arial'}}><h1>QUALIVANCE TECH</h1><p>Qualidade que impulsiona resultados.</p></main>}
