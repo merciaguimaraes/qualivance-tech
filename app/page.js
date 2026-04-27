@@ -1,3 +1,8 @@
 export default function Page() {
-  return <h1>Qualivance Tech</h1>;
+  return (
+    <main>
+      <h1>Qualivance Tech</h1>
+      <p>Qualidade que impulsiona resultados.</p>
+    </main>
+  );
 }
