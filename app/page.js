@@ -44,7 +44,9 @@ export default function Home() {
               marginBottom: "25px",
             }}
           >
-            Qualidade de Software com Elegância e Resultado
+            Qualidade de Software
+            com Elegância,
+            Performance e Resultado
           </h1>
 
           <p
