@@ -281,37 +281,12 @@ export default function Home() {
   <input
   type="tel"
   name="telefone"
-  placeholder="(71) 99999-9999"
+  placeholder="Digite apenas números"
   style={inputStyle}
   inputMode="numeric"
-  maxLength="15"
+  pattern="[0-9]*"
+  maxLength="11"
   required
-  onChange={(e) => {
-    let value = e.target.value.replace(/\D/g, "");
-
-    value = value.slice(0, 11);
-
-    if (value.length > 10) {
-      value = value.replace(
-        /^(\d{2})(\d{5})(\d{4})$/,
-        "($1) $2-$3"
-      );
-    } else if (value.length > 6) {
-      value = value.replace(
-        /^(\d{2})(\d{4,5})(\d+)/,
-        "($1) $2-$3"
-      );
-    } else if (value.length > 2) {
-      value = value.replace(
-        /^(\d{2})(\d+)/,
-        "($1) $2"
-      );
-    } else if (value.length > 0) {
-      value = value.replace(/^(\d+)/, "($1");
-    }
-
-    e.target.value = value;
-  }}
 />
 
   <input
