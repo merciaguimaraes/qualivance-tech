@@ -122,34 +122,63 @@ export default function Home() {
       </section>
 
       {/* QUEM ATUA */}
-      <section
+<section
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "20px 30px 50px",
+  }}
+>
+  <h2 style={title}>Quem Atua na Empresa</h2>
+
+  <div
+    style={{
+      background: "rgba(255,255,255,0.05)",
+      padding: "30px",
+      borderRadius: "20px",
+      border: "1px solid rgba(243,182,209,0.18)",
+      display: "grid",
+      gridTemplateColumns: "140px 1fr",
+      gap: "25px",
+      alignItems: "center",
+    }}
+  >
+    {/* FOTO PEQUENA */}
+    <div style={{ textAlign: "center" }}>
+      <img
+        src="https://i.postimg.cc/mDHWVMhB/Screenshot-20251111-183335-Google.jpg"
+        alt="Mércia Guimarães"
         style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "20px 30px 50px",
+          width: "120px",
+          height: "120px",
+          objectFit: "cover",
+          borderRadius: "50%",
+          border: "3px solid #f3b6d1",
+          boxShadow: "0 8px 25px rgba(0,0,0,0.25)",
+        }}
+      />
+    </div>
+
+    {/* TEXTO */}
+    <div>
+      <h3
+        style={{
+          fontSize: "28px",
+          marginBottom: "12px",
+          marginTop: 0,
         }}
       >
-        <h2 style={title}>Quem Atua na Empresa</h2>
+        Mércia Guimarães
+      </h3>
 
-        <div
-          style={{
-            background: "rgba(255,255,255,0.05)",
-            padding: "30px",
-            borderRadius: "20px",
-            border: "1px solid rgba(243,182,209,0.18)",
-          }}
-        >
-          <h3 style={{ fontSize: "28px", marginBottom: "15px" }}>
-            Mércia Guimarães
-          </h3>
-
-          <p style={paragraph}>
-            Fundada e liderada por Mércia Guimarães, profissional 
-            especializada em Qualidade de Software, testes 
-            e automação.
-          </p>
-        </div>
-      </section>
+      <p style={paragraph}>
+        Fundada e liderada por Mércia Guimarães, profissional
+        especializada em Qualidade de Software, testes
+        e automação.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* SERVIÇOS */}
       <section
