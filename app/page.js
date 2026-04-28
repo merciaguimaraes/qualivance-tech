@@ -7,8 +7,8 @@ export default function Home() {
           "linear-gradient(135deg, #081426 0%, #0b1f3a 45%, #102b52 100%)",
         color: "white",
         fontFamily: "Arial, Helvetica, sans-serif",
-        padding: "0",
-        margin: "0",
+        margin: 0,
+        padding: 0,
       }}
     >
       {/* HERO */}
@@ -16,7 +16,7 @@ export default function Home() {
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "80px 30px",
+          padding: "70px 30px",
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "50px",
@@ -25,22 +25,22 @@ export default function Home() {
       >
         {/* TEXTO */}
         <div>
-          {/* LOGO DA EMPRESA */}
+          {/* LOGO */}
           <img
-            src="/logo.png"
+            src="/QUALIVANCE.png"
             alt="Qualivance Tech"
             style={{
               width: "100%",
-              maxWidth: "420px",
+              maxWidth: "380px",
               marginBottom: "30px",
             }}
           />
 
           <h1
             style={{
-              fontSize: "58px",
-              lineHeight: "1.1",
-              margin: "0 0 20px 0",
+              fontSize: "62px",
+              lineHeight: "1.08",
+              marginBottom: "25px",
             }}
           >
             Qualidade de Software com Elegância e Resultado
@@ -48,10 +48,10 @@ export default function Home() {
 
           <p
             style={{
-              fontSize: "20px",
-              color: "#d9e4f2",
-              maxWidth: "600px",
+              fontSize: "21px",
               lineHeight: "1.8",
+              color: "#d9e4f2",
+              maxWidth: "620px",
             }}
           >
             Soluções inteligentes em QA, automação e performance para empresas
@@ -66,30 +66,14 @@ export default function Home() {
               flexWrap: "wrap",
             }}
           >
-            <a
-              href="/contato"
-              style={{
-                background: "#f3b6d1",
-                color: "#081426",
-                padding: "14px 24px",
-                borderRadius: "12px",
-                textDecoration: "none",
-                fontWeight: "bold",
-              }}
-            >
+            <a href="#contato" style={btnPink}>
               Solicitar Diagnóstico
             </a>
 
             <a
               href="https://instagram.com/qualivancetech"
               target="_blank"
-              style={{
-                border: "1px solid #f3b6d1",
-                color: "#fff",
-                padding: "14px 24px",
-                borderRadius: "12px",
-                textDecoration: "none",
-              }}
+              style={btnBorder}
             >
               Instagram
             </a>
@@ -99,17 +83,65 @@ export default function Home() {
         {/* SUA FOTO */}
         <div style={{ textAlign: "center" }}>
           <img
-            src="/mercia.jpg"
+            src="/mercia.png"
             alt="Mércia Guimarães"
             style={{
               width: "100%",
               maxWidth: "430px",
-              borderRadius: "26px",
+              borderRadius: "24px",
               border: "3px solid #f3b6d1",
               boxShadow: "0 20px 50px rgba(0,0,0,0.35)",
               objectFit: "cover",
             }}
           />
+        </div>
+      </section>
+
+      {/* SOBRE EMPRESA */}
+      <section
+        style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          padding: "40px 30px",
+        }}
+      >
+        <h2 style={title}>Sobre a Qualivance Tech</h2>
+
+        <p style={paragraph}>
+          A Qualivance Tech nasceu para oferecer excelência em Qualidade de
+          Software, unindo estratégia, tecnologia e resultados. Nosso foco é
+          ajudar empresas a reduzirem falhas, melhorarem processos e entregarem
+          sistemas confiáveis.
+        </p>
+      </section>
+
+      {/* QUEM ATUA */}
+      <section
+        style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          padding: "20px 30px 50px",
+        }}
+      >
+        <h2 style={title}>Quem Atua na Empresa</h2>
+
+        <div
+          style={{
+            background: "rgba(255,255,255,0.05)",
+            padding: "30px",
+            borderRadius: "20px",
+            border: "1px solid rgba(243,182,209,0.18)",
+          }}
+        >
+          <h3 style={{ fontSize: "28px", marginBottom: "15px" }}>
+            Mércia Guimarães
+          </h3>
+
+          <p style={paragraph}>
+            Profissional da área de Qualidade de Software, formada em Análise e
+            Desenvolvimento de Sistemas, com experiência em testes manuais,
+            automação com Cypress, testes de API e melhoria contínua.
+          </p>
         </div>
       </section>
 
@@ -121,15 +153,7 @@ export default function Home() {
           padding: "30px",
         }}
       >
-        <h2
-          style={{
-            fontSize: "38px",
-            marginBottom: "30px",
-            textAlign: "center",
-          }}
-        >
-          Serviços Premium
-        </h2>
+        <h2 style={title}>Serviços Premium</h2>
 
         <div
           style={{
@@ -146,15 +170,7 @@ export default function Home() {
             "Redução de Bugs",
             "Consultoria QA",
           ].map((item) => (
-            <div
-              key={item}
-              style={{
-                background: "rgba(255,255,255,0.06)",
-                padding: "24px",
-                borderRadius: "18px",
-                border: "1px solid rgba(243,182,209,0.18)",
-              }}
-            >
+            <div key={item} style={card}>
               <h3 style={{ margin: 0 }}>{item}</h3>
             </div>
           ))}
@@ -163,71 +179,49 @@ export default function Home() {
 
       {/* CONTATO */}
       <section
+        id="contato"
         style={{
           maxWidth: "900px",
           margin: "0 auto",
           padding: "80px 30px",
         }}
       >
-        <h2
-          style={{
-            fontSize: "38px",
-            marginBottom: "25px",
-            textAlign: "center",
-          }}
-        >
-          Solicite um Orçamento
-        </h2>
+        <h2 style={title}>Solicite um Orçamento</h2>
 
-        <form
-          style={{
-            display: "grid",
-            gap: "18px",
-          }}
-        >
-          <input
-            type="text"
-            placeholder="Seu nome"
-            style={inputStyle}
-          />
-
-          <input
-            type="email"
-            placeholder="Seu e-mail"
-            style={inputStyle}
-          />
-
-          <input
-            type="text"
-            placeholder="Empresa"
-            style={inputStyle}
-          />
-
+        <form style={{ display: "grid", gap: "18px" }}>
+          <input placeholder="Seu nome" style={inputStyle} />
+          <input placeholder="Seu e-mail" style={inputStyle} />
+          <input placeholder="Empresa" style={inputStyle} />
           <textarea
-            placeholder="Descreva sua necessidade"
             rows="6"
+            placeholder="Descreva sua necessidade"
             style={inputStyle}
           />
 
-          <button
-            style={{
-              background: "#f3b6d1",
-              color: "#081426",
-              border: "none",
-              padding: "16px",
-              borderRadius: "12px",
-              fontWeight: "bold",
-              fontSize: "16px",
-              cursor: "pointer",
-            }}
-          >
-            Enviar Solicitação
-          </button>
+          <button style={btnSubmit}>Enviar Solicitação</button>
         </form>
       </section>
     </main>
   );
 }
+
+const title = {
+  fontSize: "40px",
+  marginBottom: "22px",
+};
+
+const paragraph = {
+  fontSize: "20px",
+  color: "#d9e4f2",
+  lineHeight: "1.8",
+};
+
+const card = {
+  background: "rgba(255,255,255,0.06)",
+  padding: "24px",
+  borderRadius: "18px",
+  border: "1px solid rgba(243,182,209,0.18)",
+};
 
 const inputStyle = {
   width: "100%",
@@ -238,4 +232,32 @@ const inputStyle = {
   color: "white",
   fontSize: "16px",
   outline: "none",
+};
+
+const btnPink = {
+  background: "#f3b6d1",
+  color: "#081426",
+  padding: "14px 24px",
+  borderRadius: "12px",
+  textDecoration: "none",
+  fontWeight: "bold",
+};
+
+const btnBorder = {
+  border: "1px solid #f3b6d1",
+  color: "white",
+  padding: "14px 24px",
+  borderRadius: "12px",
+  textDecoration: "none",
+};
+
+const btnSubmit = {
+  background: "#f3b6d1",
+  color: "#081426",
+  border: "none",
+  padding: "16px",
+  borderRadius: "12px",
+  fontWeight: "bold",
+  fontSize: "16px",
+  cursor: "pointer",
 };
