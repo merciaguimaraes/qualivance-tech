@@ -285,27 +285,34 @@ export default function Home() {
   style={inputStyle}
   inputMode="numeric"
   maxLength="15"
-  pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
   required
-  onInput={(e) => {
-    let v = e.target.value.replace(/\D/g, "");
+  onChange={(e) => {
+    let value = e.target.value.replace(/\D/g, "");
 
-    if (v.length > 11) v = v.slice(0, 11);
+    value = value.slice(0, 11);
 
-    if (v.length > 10) {
-      v = v.replace(/^(\d{2})(\d{5})(\d{4}).*/, "($1) $2-$3");
-    } else if (v.length > 6) {
-      v = v.replace(/^(\d{2})(\d{4,5})(\d{0,4}).*/, "($1) $2-$3");
-    } else if (v.length > 2) {
-      v = v.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
-    } else if (v.length > 0) {
-      v = v.replace(/^(\d*)/, "($1");
+    if (value.length > 10) {
+      value = value.replace(
+        /^(\d{2})(\d{5})(\d{4})$/,
+        "($1) $2-$3"
+      );
+    } else if (value.length > 6) {
+      value = value.replace(
+        /^(\d{2})(\d{4,5})(\d+)/,
+        "($1) $2-$3"
+      );
+    } else if (value.length > 2) {
+      value = value.replace(
+        /^(\d{2})(\d+)/,
+        "($1) $2"
+      );
+    } else if (value.length > 0) {
+      value = value.replace(/^(\d+)/, "($1");
     }
 
-    e.target.value = v;
+    e.target.value = value;
   }}
-  /> 
- />    
+/>
 
   <input
     type="email"
