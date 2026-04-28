@@ -237,18 +237,80 @@ export default function Home() {
   de oportunidades de melhoria para seu produto digital.
 </p>
 
-<form style={{ display: "grid", gap: "18px" }}>
-  <input placeholder="Seu nome" style={inputStyle} />
-  <input placeholder="Telefone / WhatsApp" style={inputStyle} />
-  <input placeholder="Seu e-mail" style={inputStyle} />
-  <input placeholder="Empresa" style={inputStyle} />
-  <input placeholder="Prazo do projeto" style={inputStyle} />
-  <input placeholder="Tipo de sistema" style={inputStyle} />
+<form
+  action="https://formsubmit.co/qualivancetech@hotmail.com"
+  method="POST"
+  style={{ display: "grid", gap: "18px" }}
+>
+  <input
+    type="hidden"
+    name="_subject"
+    value="Novo lead recebido pelo site Qualivance Tech"
+  />
+
+  <input
+    type="hidden"
+    name="_captcha"
+    value="false"
+  />
+
+  <input
+    type="hidden"
+    name="_template"
+    value="table"
+  />
+
+  <input
+    type="hidden"
+    name="_next"
+    value="https://qualivance-tech.vercel.app"
+  />
+
+  <input
+    name="nome"
+    placeholder="Seu nome"
+    style={inputStyle}
+    required
+  />
+
+  <input
+    name="telefone"
+    placeholder="Telefone / WhatsApp"
+    style={inputStyle}
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Seu e-mail"
+    style={inputStyle}
+    required
+  />
+
+  <input
+    name="empresa"
+    placeholder="Empresa"
+    style={inputStyle}
+  />
+
+  <input
+    name="prazo"
+    placeholder="Prazo do projeto"
+    style={inputStyle}
+  />
+
+  <input
+    name="sistema"
+    placeholder="Tipo de sistema"
+    style={inputStyle}
+  />
 
   <textarea
+    name="mensagem"
     rows="6"
     placeholder="Descreva sua necessidade"
     style={inputStyle}
+    required
   />
 
  <button style={btnSubmit}>Enviar Solicitação</button>
