@@ -90,7 +90,7 @@ export default function Home() {
         {/* FOTO */}
         <div style={{ textAlign: "center" }}>
           <img
-            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=700&q=80"
+            src=""C:\Users\Mércia Guimarães\Downloads\Design sem nome (15).png""
             alt="Fundadora Qualivance Tech"
             style={{
               width: "100%",
