@@ -304,7 +304,8 @@ export default function Home() {
 
     e.target.value = v;
   }}
-/>
+  /> 
+ />    
 
   <input
     type="email"
