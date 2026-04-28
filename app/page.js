@@ -222,7 +222,7 @@ export default function Home() {
           padding: "80px 30px",
         }}
       >
-        <h2 style={title}>Agendar Reunião</h2>
+        <h2 style={title}>Diagnóstico Inicial Gratuito</h2>
 
         <form style={{ display: "grid", gap: "18px" }}>
           <input placeholder="Seu nome" style={inputStyle} />
