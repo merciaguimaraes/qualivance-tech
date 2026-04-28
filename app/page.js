@@ -84,7 +84,7 @@ export default function Home() {
         {/* FOTO */}
         <div style={{ textAlign: "center" }}>
           <img
-            src="https://i.postimg.cc/DyrPqDzF/Design-sem-nome-(23).png"
+            src="https://i.postimg.cc/mDKKFqgD/Chat-GPT-Image-28-de-abr-de-2026-15-00-27.png"
             alt="Mércia Guimarães"
             style={{
               width: "100%",
