@@ -16,9 +16,9 @@ export default function Home() {
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "70px 30px",
+          padding: "40px 20px",
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
+          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
           gap: "50px",
           alignItems: "center",
         }}
@@ -39,7 +39,7 @@ export default function Home() {
 
           <h1
             style={{
-              fontSize: "52px",
+              fontSize: "clamp(36px, 8vw, 52px)",
               lineHeight: "1.15",
               marginBottom: "25px",
               fontWeight: "700",
@@ -139,7 +139,7 @@ export default function Home() {
       borderRadius: "20px",
       border: "1px solid rgba(243,182,209,0.18)",
       display: "grid",
-      gridTemplateColumns: "140px 1fr",
+      gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
       gap: "25px",
       alignItems: "center",
     }}
@@ -321,12 +321,12 @@ export default function Home() {
 }
 
 const title = {
-  fontSize: "40px",
+  fontSize: "clamp(30px, 6vw, 40px)",
   marginBottom: "22px",
 };
 
 const paragraph = {
-  fontSize: "20px",
+  fontSize: "clamp(16px, 4vw, 20px)",
   color: "#d9e4f2",
   lineHeight: "1.8",
 };
