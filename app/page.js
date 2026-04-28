@@ -19,21 +19,22 @@ export default function Home() {
           padding: "80px 30px",
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          gap: "40px",
+          gap: "50px",
           alignItems: "center",
         }}
       >
+        {/* TEXTO */}
         <div>
-          <p
+          {/* LOGO DA EMPRESA */}
+          <img
+            src="/logo.png"
+            alt="Qualivance Tech"
             style={{
-              color: "#f3b6d1",
-              letterSpacing: "3px",
-              fontWeight: "bold",
-              marginBottom: "12px",
+              width: "100%",
+              maxWidth: "420px",
+              marginBottom: "30px",
             }}
-          >
-            QUALIVANCE TECH
-          </p>
+          />
 
           <h1
             style={{
@@ -50,16 +51,23 @@ export default function Home() {
               fontSize: "20px",
               color: "#d9e4f2",
               maxWidth: "600px",
-              lineHeight: "1.7",
+              lineHeight: "1.8",
             }}
           >
             Soluções inteligentes em QA, automação e performance para empresas
             que exigem excelência digital.
           </p>
 
-          <div style={{ marginTop: "35px", display: "flex", gap: "15px" }}>
+          <div
+            style={{
+              marginTop: "35px",
+              display: "flex",
+              gap: "15px",
+              flexWrap: "wrap",
+            }}
+          >
             <a
-              href="https://wa.me/"
+              href="/contato"
               style={{
                 background: "#f3b6d1",
                 color: "#081426",
@@ -74,6 +82,7 @@ export default function Home() {
 
             <a
               href="https://instagram.com/qualivancetech"
+              target="_blank"
               style={{
                 border: "1px solid #f3b6d1",
                 color: "#fff",
@@ -87,17 +96,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* FOTO */}
+        {/* SUA FOTO */}
         <div style={{ textAlign: "center" }}>
           <img
-            src=""C:\Users\Mércia Guimarães\Downloads\Design sem nome (15).png""
-            alt="Fundadora Qualivance Tech"
+            src="/mercia.jpg"
+            alt="Mércia Guimarães"
             style={{
               width: "100%",
-              maxWidth: "420px",
-              borderRadius: "24px",
+              maxWidth: "430px",
+              borderRadius: "26px",
               border: "3px solid #f3b6d1",
               boxShadow: "0 20px 50px rgba(0,0,0,0.35)",
+              objectFit: "cover",
             }}
           />
         </div>
@@ -111,14 +121,20 @@ export default function Home() {
           padding: "30px",
         }}
       >
-        <h2 style={{ fontSize: "38px", marginBottom: "30px" }}>
+        <h2
+          style={{
+            fontSize: "38px",
+            marginBottom: "30px",
+            textAlign: "center",
+          }}
+        >
           Serviços Premium
         </h2>
 
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
             gap: "20px",
           }}
         >
@@ -145,65 +161,81 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SOBRE */}
+      {/* CONTATO */}
       <section
         style={{
-          maxWidth: "1200px",
+          maxWidth: "900px",
           margin: "0 auto",
-          padding: "70px 30px",
+          padding: "80px 30px",
         }}
       >
-        <h2 style={{ fontSize: "38px", marginBottom: "20px" }}>
-          Sobre a Qualivance
-        </h2>
-
-        <p
+        <h2
           style={{
-            maxWidth: "900px",
-            fontSize: "20px",
-            lineHeight: "1.8",
-            color: "#d9e4f2",
+            fontSize: "38px",
+            marginBottom: "25px",
+            textAlign: "center",
           }}
         >
-          Uma marca criada para unir tecnologia, sofisticação e resultados.
-          Ajudamos empresas a crescerem com sistemas confiáveis, processos mais
-          seguros e melhor experiência digital.
-        </p>
-      </section>
-
-      {/* CTA FINAL */}
-      <section
-        style={{
-          padding: "70px 30px",
-          textAlign: "center",
-          background: "rgba(243,182,209,0.08)",
-          marginTop: "30px",
-        }}
-      >
-        <h2 style={{ fontSize: "42px", marginBottom: "15px" }}>
-          Pronta para elevar seu negócio?
+          Solicite um Orçamento
         </h2>
 
-        <p style={{ fontSize: "20px", color: "#d9e4f2" }}>
-          Fale com a Qualivance Tech e solicite uma análise inicial.
-        </p>
-
-        <a
-          href="https://wa.me/"
+        <form
           style={{
-            display: "inline-block",
-            marginTop: "28px",
-            background: "#f3b6d1",
-            color: "#081426",
-            padding: "16px 28px",
-            borderRadius: "12px",
-            textDecoration: "none",
-            fontWeight: "bold",
+            display: "grid",
+            gap: "18px",
           }}
         >
-          Falar no WhatsApp
-        </a>
+          <input
+            type="text"
+            placeholder="Seu nome"
+            style={inputStyle}
+          />
+
+          <input
+            type="email"
+            placeholder="Seu e-mail"
+            style={inputStyle}
+          />
+
+          <input
+            type="text"
+            placeholder="Empresa"
+            style={inputStyle}
+          />
+
+          <textarea
+            placeholder="Descreva sua necessidade"
+            rows="6"
+            style={inputStyle}
+          />
+
+          <button
+            style={{
+              background: "#f3b6d1",
+              color: "#081426",
+              border: "none",
+              padding: "16px",
+              borderRadius: "12px",
+              fontWeight: "bold",
+              fontSize: "16px",
+              cursor: "pointer",
+            }}
+          >
+            Enviar Solicitação
+          </button>
+        </form>
       </section>
     </main>
   );
 }
+
+const inputStyle = {
+  width: "100%",
+  padding: "15px",
+  borderRadius: "12px",
+  border: "1px solid rgba(255,255,255,0.15)",
+  background: "rgba(255,255,255,0.06)",
+  color: "white",
+  fontSize: "16px",
+  outline: "none",
+};
