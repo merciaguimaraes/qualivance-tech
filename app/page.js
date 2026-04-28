@@ -63,26 +63,29 @@ export default function Home() {
           </p>
 
           <div
-            style={{
-              marginTop: "35px",
-              display: "flex",
-              gap: "15px",
-              flexWrap: "wrap",
-            }}
-          >
-            <a href="#contato" style={btnPink}>
-              Solicitar Diagnóstico
-            </a>
+  style={{
+    marginTop: "35px",
+    display: "flex",
+    gap: "15px",
+    flexWrap: "wrap",
+  }}
+>
+  <a
+    href="#contato"
+    style={btnPink}
+  >
+    Solicitar Diagnóstico
+  </a>
 
-            <a
-              href="https://instagram.com/qualivancetech"
-              target="_blank"
-              style={btnBorder}
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
+  <a
+    href="https://www.instagram.com/qualivancetech/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={btnBorder}
+  >
+    Instagram
+  </a>
+</div>
 
         {/* FOTO */}
         <div style={{ textAlign: "center" }}>
