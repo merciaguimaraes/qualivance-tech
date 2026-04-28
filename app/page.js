@@ -218,15 +218,16 @@ export default function Home() {
         id="contato"
         style={{
           maxWidth: "900px",
-          margin: "0 auto",
-          padding: "80px 30px",
+          padding: "50px 20px",
+          width: "100%",
+          boxSizing: "border-box",
         }}
       >
         <h2 style={title}>Solicite seu Diagnóstico Inicial</h2>
 
 <p
   style={{
-    fontSize: "18px",
+    fontSize: "clamp(16px, 4vw, 18px)",
     color: "#d9e4f2",
     lineHeight: "1.7",
     marginBottom: "28px",
@@ -240,7 +241,11 @@ export default function Home() {
 <form
   action="https://formsubmit.co/qualivancetech@hotmail.com"
   method="POST"
-  style={{ display: "grid", gap: "18px" }}
+  style={{
+  display: "grid",
+  gap: "16px",
+  width: "100%",
+}}
 >
   <input
     type="hidden"
