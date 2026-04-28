@@ -350,13 +350,14 @@ const card = {
 
 const inputStyle = {
   width: "100%",
-  padding: "15px",
-  borderRadius: "12px",
+  padding: "12px 14px",
+  borderRadius: "10px",
   border: "1px solid rgba(255,255,255,0.15)",
-  background: "rgba(255,255,255,0.06)",
-  color: "white",
-  fontSize: "16px",
+  background: "rgba(255,255,255,0.05)",
+  color: "#fff",
+  fontSize: "15px",
   outline: "none",
+  boxSizing: "border-box",
 };
 
 const btnPink = {
