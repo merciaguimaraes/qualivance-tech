@@ -111,10 +111,13 @@ export default function Home() {
         <h2 style={title}>Sobre a Qualivance Tech</h2>
 
         <p style={paragraph}>
-          A Qualivance Tech nasceu para oferecer excelência em Qualidade de
-          Software, unindo estratégia, tecnologia e resultados. Nosso foco é
-          ajudar empresas a reduzirem falhas, melhorarem processos e entregarem
-          sistemas confiáveis.
+          A Qualivance Tech nasceu com o propósito de elevar a qualidade 
+          de produtos digitais por meio de estratégia, tecnologia 
+          e excelência em testes.
+
+          Atuamos lado a lado com empresas que desejam reduzir falhas, 
+          melhorar processos e entregar sistemas mais confiáveis, 
+          seguros e eficientes.
         </p>
       </section>
 
@@ -141,9 +144,9 @@ export default function Home() {
           </h3>
 
           <p style={paragraph}>
-            Profissional da área de Qualidade de Software, formada em Análise e
-            Desenvolvimento de Sistemas, com experiência em testes manuais,
-            automação com Cypress, testes de API e melhoria contínua.
+            Fundada e liderada por Mércia Guimarães, profissional 
+            especializada em Qualidade de Software, testes 
+            e automação.
           </p>
         </div>
       </section>
@@ -189,12 +192,15 @@ export default function Home() {
           padding: "80px 30px",
         }}
       >
-        <h2 style={title}>Solicite um Orçamento</h2>
+        <h2 style={title}>Agendar Reunião</h2>
 
         <form style={{ display: "grid", gap: "18px" }}>
           <input placeholder="Seu nome" style={inputStyle} />
+          <input placeholder="Telefone / WhatsApp" style={inputStyle} />
           <input placeholder="Seu e-mail" style={inputStyle} />
           <input placeholder="Empresa" style={inputStyle} />
+          <input placeholder="Prazo do projeto" style={inputStyle} />
+          <input placeholder="Tipo de sistema" style={inputStyle} />
           <textarea
             rows="6"
             placeholder="Descreva sua necessidade"
