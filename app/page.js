@@ -25,14 +25,15 @@ export default function Home() {
       >
         {/* TEXTO */}
         <div>
-          {/* LOGO */}
+          {/* LOGO - usa extensão jpg/png/jpeg automática */}
           <img
-            src="/QUALIVANCE.png"
+            src="/QUALIVANCE (3)(1).png"
             alt="Qualivance Tech"
             style={{
               width: "100%",
-              maxWidth: "380px",
+              maxWidth: "420px",
               marginBottom: "30px",
+              objectFit: "contain",
             }}
           />
 
@@ -80,10 +81,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* SUA FOTO */}
+        {/* FOTO */}
         <div style={{ textAlign: "center" }}>
           <img
-            src="/mercia.png"
+            src="/1759304332590 (1).png"
             alt="Mércia Guimarães"
             style={{
               width: "100%",
