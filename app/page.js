@@ -27,7 +27,7 @@ export default function Home() {
         <div>
           {/* LOGO - usa extensão jpg/png/jpeg automática */}
           <img
-            src="https://i.postimg.cc/DyrPqDzF/Design-sem-nome-(23).png"
+            src="https://i.postimg.cc/zGhqfCDW/Design-sem-nome-(22).png"
             alt="Qualivance Tech"
             style={{
               width: "100%",
@@ -84,7 +84,7 @@ export default function Home() {
         {/* FOTO */}
         <div style={{ textAlign: "center" }}>
           <img
-            src=""
+            src="https://i.postimg.cc/DyrPqDzF/Design-sem-nome-(23).png"
             alt="Mércia Guimarães"
             style={{
               width: "100%",
