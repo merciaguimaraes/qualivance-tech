@@ -27,7 +27,7 @@ export default function Home() {
         <div>
           {/* LOGO - usa extensão jpg/png/jpeg automática */}
           <img
-            src="/QUALIVANCE (3)(1).png"
+            src="https://i.postimg.cc/W38QBMqt/QUALIVANCE-(3).png"
             alt="Qualivance Tech"
             style={{
               width: "100%",
@@ -84,7 +84,7 @@ export default function Home() {
         {/* FOTO */}
         <div style={{ textAlign: "center" }}>
           <img
-            src="/1759304332590 (1).png"
+            src="https://i.postimg.cc/mZFnNf84/1759304332590-(1).png"
             alt="Mércia Guimarães"
             style={{
               width: "100%",
