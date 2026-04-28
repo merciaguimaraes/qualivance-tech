@@ -27,7 +27,7 @@ export default function Home() {
         <div>
           {/* LOGO - usa extensão jpg/png/jpeg automática */}
           <img
-            src="https://i.postimg.cc/W38QBMqt/QUALIVANCE-(3).png"
+            src="https://i.postimg.cc/W1LcJmrF/Design-sem-nome-(19).png"
             alt="Qualivance Tech"
             style={{
               width: "100%",
