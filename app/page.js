@@ -39,9 +39,10 @@ export default function Home() {
 
           <h1
             style={{
-              fontSize: "62px",
-              lineHeight: "1.08",
+              fontSize: "52px",
+              lineHeight: "1.15",
               marginBottom: "25px",
+              fontWeight: "700",
             }}
           >
             Qualidade de Software
