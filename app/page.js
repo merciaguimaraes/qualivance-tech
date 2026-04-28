@@ -251,10 +251,12 @@ export default function Home() {
     style={inputStyle}
   />
 
-  <button style={btnSubmit}>
-    Enviar Solicitação
-  </button>
-</form>
+ <button style={btnSubmit}>Enviar Solicitação</button>
+</form> 
+</section> 
+</main> 
+  ); 
+}
 
 const title = {
   fontSize: "40px",
