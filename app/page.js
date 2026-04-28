@@ -46,7 +46,7 @@ export default function Home() {
             }}
           >
             Qualidade de Software
-            com Elegância,
+            com Estratégia,
             Performance e Resultado
           </h1>
 
@@ -58,8 +58,9 @@ export default function Home() {
               maxWidth: "620px",
             }}
           >
-            Soluções inteligentes em QA, automação e performance para empresas
-            que exigem excelência digital.
+            Soluções inteligentes em QA, testes e automação para empresas
+            que desejam reduzir falhas, acelerar entregas
+            e elevar a experiência digital.
           </p>
 
           <div
@@ -112,13 +113,10 @@ export default function Home() {
         <h2 style={title}>Sobre a Qualivance Tech</h2>
 
         <p style={paragraph}>
-          A Qualivance Tech nasceu com o propósito de elevar a qualidade 
-          de produtos digitais por meio de estratégia, tecnologia 
-          e excelência em testes.
+          A Qualivance Tech nasceu para transformar qualidade em vantagem competitiva.
 
-          Atuamos lado a lado com empresas que desejam reduzir falhas, 
-          melhorar processos e entregar sistemas mais confiáveis, 
-          seguros e eficientes.
+          Ajudamos empresas a reduzir falhas, melhorar processos
+          e entregar produtos digitais mais seguros, eficientes e confiáveis.
         </p>
       </section>
 
@@ -173,9 +171,9 @@ export default function Home() {
       </h3>
 
       <p style={paragraph}>
-        Fundada e liderada por Mércia Guimarães, profissional
-        especializada em Qualidade de Software, testes
-        e automação.
+        Fundada e liderada por Mércia Guimarães, profissional especializada
+        em Qualidade de Software, testes funcionais,
+        automação e melhoria contínua.
       </p>
     </div>
   </div>
@@ -199,11 +197,11 @@ export default function Home() {
           }}
         >
           {[
-            "Testes Manuais Estratégicos",
+            "Testes Funcionais Estratégicos",
             "Automação com Cypress",
             "Testes de API",
             "Qualidade Contínua",
-            "Redução de Bugs",
+            "Redução de Bugs em Produção",
             "Consultoria QA",
           ].map((item) => (
             <div key={item} style={card}>
@@ -222,7 +220,7 @@ export default function Home() {
           padding: "80px 30px",
         }}
       >
-        <h2 style={title}>Diagnóstico Inicial Gratuito</h2>
+        <h2 style={title}>Solicite seu Diagnóstico Inicial</h2>
 
         <form style={{ display: "grid", gap: "18px" }}>
           <input placeholder="Seu nome" style={inputStyle} />
