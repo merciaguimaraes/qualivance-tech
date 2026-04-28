@@ -224,31 +224,37 @@ export default function Home() {
       >
         <h2 style={title}>Solicite seu Diagnóstico Inicial</h2>
 
-        <p style={paragraph}>
-        Conte seu cenário atual e retornaremos com uma visão inicial
-        de oportunidades de melhoria.
-        </p>
-      </section>
+<p
+  style={{
+    fontSize: "18px",
+    color: "#d9e4f2",
+    lineHeight: "1.7",
+    marginBottom: "28px",
+    maxWidth: "700px",
+  }}
+>
+  Conte seu cenário atual e retornaremos com uma visão inicial
+  de oportunidades de melhoria para seu produto digital.
+</p>
 
-        <form style={{ display: "grid", gap: "18px" }}>
-          <input placeholder="Seu nome" style={inputStyle} />
-          <input placeholder="Telefone / WhatsApp" style={inputStyle} />
-          <input placeholder="Seu e-mail" style={inputStyle} />
-          <input placeholder="Empresa" style={inputStyle} />
-          <input placeholder="Prazo do projeto" style={inputStyle} />
-          <input placeholder="Tipo de sistema" style={inputStyle} />
-          <textarea
-            rows="6"
-            placeholder="Descreva sua necessidade"
-            style={inputStyle}
-          />
+<form style={{ display: "grid", gap: "18px" }}>
+  <input placeholder="Seu nome" style={inputStyle} />
+  <input placeholder="Telefone / WhatsApp" style={inputStyle} />
+  <input placeholder="Seu e-mail" style={inputStyle} />
+  <input placeholder="Empresa" style={inputStyle} />
+  <input placeholder="Prazo do projeto" style={inputStyle} />
+  <input placeholder="Tipo de sistema" style={inputStyle} />
 
-          <button style={btnSubmit}>Enviar Solicitação</button>
-        </form>
-      </section>
-    </main>
-  );
-}
+  <textarea
+    rows="6"
+    placeholder="Descreva sua necessidade"
+    style={inputStyle}
+  />
+
+  <button style={btnSubmit}>
+    Enviar Solicitação
+  </button>
+</form>
 
 const title = {
   fontSize: "40px",
