@@ -281,7 +281,7 @@ export default function Home() {
   <input
   type="tel"
   name="telefone"
-  placeholder="Digite apenas números"
+  placeholder="Telefone/ Whatsapp"
   style={inputStyle}
   inputMode="numeric"
   pattern="[0-9]*"
