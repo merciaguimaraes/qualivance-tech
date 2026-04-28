@@ -73,7 +73,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://instagram.com/"
+              href="https://instagram.com/qualivancetech"
               style={{
                 border: "1px solid #f3b6d1",
                 color: "#fff",
