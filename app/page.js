@@ -279,10 +279,32 @@ export default function Home() {
   />
 
   <input
-    name="telefone"
-    placeholder="Telefone / WhatsApp"
-    style={inputStyle}
-  />
+  type="tel"
+  name="telefone"
+  placeholder="(71) 99999-9999"
+  style={inputStyle}
+  inputMode="numeric"
+  maxLength="15"
+  pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+  required
+  onInput={(e) => {
+    let v = e.target.value.replace(/\D/g, "");
+
+    if (v.length > 11) v = v.slice(0, 11);
+
+    if (v.length > 10) {
+      v = v.replace(/^(\d{2})(\d{5})(\d{4}).*/, "($1) $2-$3");
+    } else if (v.length > 6) {
+      v = v.replace(/^(\d{2})(\d{4,5})(\d{0,4}).*/, "($1) $2-$3");
+    } else if (v.length > 2) {
+      v = v.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
+    } else if (v.length > 0) {
+      v = v.replace(/^(\d*)/, "($1");
+    }
+
+    e.target.value = v;
+  }}
+/>
 
   <input
     type="email"
